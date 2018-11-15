@@ -1,0 +1,43 @@
+{
+    "name": "coderius/yii2-vide",
+    "description": "Yii2 vide widget wrapper to jQuery plugin for video backgrounds",
+    "keywords": ["vide video backgrounds"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serg Coderius",
+            "email": "sunrise4fun@gmail.com",
+            "homepage": "https://coderius.biz.ua",
+            "role": "Developer"
+        }
+    ],
+    
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.10",
+        "npm-asset/vide": "*"
+        
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "coderius\\vide\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "repositories": [
+        
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+        
+    ]
+}
