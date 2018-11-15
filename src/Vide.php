@@ -17,7 +17,7 @@ use yii\helpers\Html;
 use Closure;
 use yii\base\InvalidConfigException;
 
-class MagnificPopup extends Widget
+class Vide extends Widget
 {
     
     /**

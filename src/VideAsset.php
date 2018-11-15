@@ -15,7 +15,7 @@ use yii\web\AssetBundle;
 /**
  * Asset bundle jQCloudAsset
  */
-class MagnificPopupAsset extends AssetBundle
+class VideAsset extends AssetBundle
 {
     public $sourcePath = '@npm/vide/dist';
     
