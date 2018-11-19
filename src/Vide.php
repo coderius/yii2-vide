@@ -20,6 +20,14 @@ use yii\base\InvalidConfigException;
 class Vide extends Widget
 {
     
+    public $target;
+
+    public $path;
+
+    public $clientOptions = [];
+
+
+
     /**
      * @inheritdoc
      */
@@ -27,7 +35,13 @@ class Vide extends Widget
     {
         parent::init();
         
-        //
+        if (empty($this->target) || $this->target === null) {
+            throw new InvalidConfigException('"Vide::$target" must be set');
+        }
+
+        if ($this->path === null) {
+            throw new InvalidConfigException('"Vide::$path" must be set');
+        }
         
     } 
     
@@ -37,7 +51,15 @@ class Vide extends Widget
     public function run()
     {
         $view = $this->getView();
-        echo "vide";
+        VideAsset::register($view);
+
+        $path = Json::encode($this->path);
+        $options = Json::encode($this->clientOptions);
+
+
+        $js = "jQuery('{$this->target}').vide(" . $path . ", " . $options . ");";
+        $view->registerJs($js);
+
     }
     
     
