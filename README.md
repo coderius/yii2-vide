@@ -4,6 +4,7 @@ Yii2-vide
 Yii 2.0 widget that allows you to create video backgrounds. 
 The yii2-vide widget is a wrapper for the [Vide jQuery plugin](https://github.com/VodkaBears/Vide#readme) 
 
+See [example result](http://vodkabears.github.io/vide/)
 
 Installation
 ------------
