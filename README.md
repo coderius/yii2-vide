@@ -19,6 +19,7 @@ or add
 
 ```json
 "coderius/yii2-vide" : "@dev"
+```
 
 Basic usage.
 -----------
